@@ -16,6 +16,7 @@
         android:layout_height="250dp"
         app:cardCornerRadius="20dp">
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:scaleType="fitXY"
@@ -29,6 +30,7 @@
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal">
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/selectBtn"
             android:layout_marginTop="40dp"
             android:layout_marginStart="20dp"
             android:layout_width="150dp"
@@ -39,6 +41,7 @@
             app:cornerRadius="10dp"
             android:backgroundTint="@color/blue"/>
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/csptureBtn"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="20dp"
@@ -54,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/resultBtn"
             style="@style/Widget.MaterialComponents.Button"
             app:cornerRadius="10dp"
             android:layout_centerInParent="true"
@@ -65,15 +69,33 @@
             android:backgroundTint="@color/blue"/>
     </RelativeLayout>
     <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Suratyň Netijesi:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
-            android:layout_centerInParent="true"
+            android:id="@+id/resultTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="Netije"
-            android:textSize="16sp"/>
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="20sp" />
     </RelativeLayout>
 
 
